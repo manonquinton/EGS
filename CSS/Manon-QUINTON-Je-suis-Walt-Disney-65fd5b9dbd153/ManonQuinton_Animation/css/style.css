@@ -1,0 +1,135 @@
+body{
+    margin: 0%;
+}
+.roule{
+    display: flex;
+    width: 350px;
+    height: 250px;
+    background-color: blue;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.roule:hover{
+    animation: spin 0.5s linear infinite;
+}
+
+
+
+.stop{
+    display: flex;
+    width: 350px;
+    height: 250px;
+    background-color: blue;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    color: white;   
+}
+
+.stop:hover{
+    animation: spin 0.5s linear 3;
+}
+
+@keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+.conteneur{
+    position: relative;
+    height: 60vh;
+    background-image: url(../img/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    background-position: 20% 100%;
+}
+
+.texte{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 75px;
+    transform: translate(-50%,-50%);
+    background-image: url(../img/panneau.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    background-position: center;  
+}
+
+.bipbip{
+    width: 150px;
+}
+
+.boite{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin: 20% -11%;
+    
+}
+
+.boite::after{
+    content: "BIPBIP";
+    width: 80px;
+    background-color: blue;
+    padding: 12px;
+    opacity: 0;
+}
+
+.texte:hover + .boite{
+    animation: move 5s ease-in-out;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(-200px);
+    }
+   50%{
+       transform: scale(2) translateX(300px);
+   }
+   65%{
+       transform: scale(2) translateX(300px);
+   }
+    100%{
+        transform: scale(1) translateX(200vw);
+    }
+}
+
+.texte:hover + .boite::after{
+    animation: opacity 5s linear;
+}
+
+@keyframes opacity{
+    0%{
+
+        opacity: 0;
+    }
+    49%{
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    65%{
+        opacity: 1;
+    }
+    66%{
+        opacity: 0;
+    }
+    100%{
+        
+        opacity: 0;
+    }
+
+}
+    

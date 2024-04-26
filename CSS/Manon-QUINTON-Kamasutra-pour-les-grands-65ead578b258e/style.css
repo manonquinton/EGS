@@ -1,0 +1,70 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    width: 80%;
+    height: 80%;
+    background-image: url('wave.jpg');
+    background-size: 500px 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10%;
+  }
+  
+  .banner {
+    background-color: yellow;
+    position: absolute;
+    top: 160px; 
+    width: 33.1%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @font-face {
+    font-family: 'PokemonHollow';
+    src: url('PokemonHollow.ttf') format('truetype');
+}
+  .title {
+    font-family: 'PokemonHollow', sans-serif;
+    font-size: 35px;
+    color: rgb(49, 89, 251); 
+    padding: 20px;
+    z-index: 1; 
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 270px;
+    left: 580px;
+    width: 75px;
+    height: 50px;
+    z-index: 1; 
+  }
+  
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 130px;
+    z-index: 1; 
+  }
+  
+  .top-right {
+    position: absolute;
+    top: 225px;
+    right: 480px;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+  }
+  

@@ -1,0 +1,38 @@
+/* Centre le titre principal */
+body > h2:first-of-type {
+    text-align: center;
+}
+
+/* Colorie les titres en fonction de leur position */
+body > hr + section > h2:first-of-type {
+    color: red;
+}
+body > hr + section > h2:last-of-type {
+    color: green;
+}
+
+/* Change la couleur du paragraphe dans la div en bleu */
+body > div > p {
+    color: blue;
+}
+
+/* Style le premier paragraphe dans l'article en bleu */
+body > article > p:first-of-type {
+    color: blue;
+}
+
+/* Style le deuxième paragraphe dans l'article en rouge */
+body > article > p:nth-of-type(2) {
+    color: red;
+}
+
+/* Style le dernier paragraphe en rouge et en gras */
+body > p:last-of-type {
+    color: red;
+    font-weight: bold;
+}
+
+/* Change la couleur du texte du span au survol */
+body > p > span:first-of-type:hover {
+    color: blue;
+}

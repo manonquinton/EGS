@@ -1,0 +1,44 @@
+/* Styles pour la navigation */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li:nth-child(2) {
+    margin: 0 auto; /* Centre le deuxième élément */
+}
+
+/* Styles pour le texte avec la classe text1 */
+.text1 {
+    color: pink; /* Change la couleur du texte en rose */
+    font-size: smaller; /* Réduit la taille de la police */
+}
+
+/* Styles pour le texte avec l'ID text2 */
+#text2 {
+    color: green; /* Change la couleur du texte en vert */
+    font-size: larger; /* Augmente légèrement la taille de la police */
+    font-weight: bold;
+}
+
+/* Styles pour le footer */
+footer {
+    background-color: blue; /* Change la couleur de fond en bleu */
+}
+
+.footer span {
+    color: red; /* Change la couleur du texte en rouge */
+    text-transform: uppercase;
+    font-size: xx-large; /* Augmente considérablement la taille de la police */
+}
+
+#span {
+    color: lightgreen; /* Change la couleur du texte en vert clair */
+    text-transform: uppercase;
+    font-size: smaller;
+}

@@ -1,0 +1,64 @@
+/* Set the font for the entire document */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the main heading */
+h1 {
+    font-size: 2.5em;
+    margin-top: 2rem;
+    text-shadow: magenta 3px 7px;
+}
+
+/* Style the subheading */
+h2 {
+    text-shadow: rgb(0, 0, 0) 2px 5px;
+    color:rgb(201, 12, 201);
+    font-size: 2.5em;
+    margin-top: 2rem;
+    font-style: italic;
+}
+h3 {
+    color : green;
+    text-transform: capitalize;
+}
+
+/* Style the paragraphs */
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+/* Style the spans */
+.maj {
+    text-transform: uppercase;
+}
+
+.italique {
+    font-style: italic;
+}
+
+.under {
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: 'BerthaMelanie';
+    src: url('BerthaMelanie.ttf') format('truetype');
+}
+
+.fontface {
+    font-family: 'BerthaMelanie', sans-serif; /* Apply the custom font to elements with class "fontface" */
+    color: red;
+}
+
+.googlefont {
+    font-family: 'Roboto', sans-serif;
+    color:blue;
+}
+
+.bold {
+    font-weight: bold;
+    font-size:2em;
+}
