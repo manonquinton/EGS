@@ -1,0 +1,59 @@
+<form action="some-action-url" method="post">
+    <fieldset>
+        <legend>Je m'inscris à l'EGS</legend>
+        <p>
+            <input type="radio" id="homme" name="gender" value="M.">
+            <label for="homme">M.</label>
+            <input type="radio" id="femme" name="gender" value="Mme.">
+            <label for="femme">Mme.</label>
+        </p>
+        <p>
+            <label for="prenom">Entrez votre prénom *</label><br>
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+        </p>
+        <p>
+            <label for="nom">Entrez votre nom *</label><br>
+            <input type="text" id="nom" name="nom" placeholder="Nom" required>
+        </p>
+        <p>
+            <label for="email">Entrez votre adresse mail *</label><br>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+        </p>
+        <p>
+            <label for="password">Entrez votre mot de passe</label><br>
+            <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+        </p>
+        <p>
+            <label for="egs">Vous voulez vous inscrire en... *</label><br>
+            <select id="egs" name="egs" required>
+                <option value="" selected disabled>Choisissez une option...</option>
+                <option value="dev">Développmeent</option>
+                <option value="design">Design</option>
+                <option value="market">Marketing</option>
+            </select>
+        </p>
+        <p>
+            <label for="typejeu">Vous êtes une bête sur... *</label><br>
+            <select id="typejeu" name="typjeu" required>
+                <option value="" selected disabled>Choisissez une option...</option>
+                <optgroup label="fps et shoot">
+                    <option value="Fortnite">Fortnite</option>
+                    <option value="CSGO">CSGO</option>
+                    <option value="Valorant">Valorant</option>
+                </optgroup>
+                <optgroup label="MOBA">
+                    <option value="lol">League of legends</option>
+                    <option value="dota">DOTA 2</option>
+                </optgroup>
+                <option value="autre">Autre</option>
+            </select>
+        </p>
+        <p>
+            <label for="jeu">Si autre, veuillez indiquer votre jeu ci-dessous :</label><br>
+            <input type="text" id="jeu" name="jeu" placeholder="Votre jeu">
+        </p>
+        <p>
+            <input type="submit" value="Envoyer ma candidature">
+        </p>
+    </fieldset>
+</form>
